@@ -1,174 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mohamed Gamal Shahda | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Montserrat', sans-serif;
     }
-
     body {
-      background: #f4f4f4;
+      font-family: 'Roboto', sans-serif;
+      background: #f4f6f8;
       color: #333;
       line-height: 1.6;
-      overflow-x: hidden;
+      animation: fadeIn 1s ease-in;
     }
-
     header {
-      background: linear-gradient(to right, #1e3c72, #2a5298);
+      background: linear-gradient(to right, #004e92, #000428);
       color: #fff;
-      padding: 60px 20px;
       text-align: center;
-      animation: fadeInDown 1.2s ease;
+      padding: 40px 20px;
     }
-
     header h1 {
-      font-size: 3em;
+      font-size: 2.5em;
       margin-bottom: 10px;
     }
-
     header p {
       font-size: 1.2em;
     }
-
+    nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #1abc9c;
+    }
     section {
-      padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
-      animation: fadeInUp 1s ease;
+      padding: 40px 20px;
+      background: #fff;
+      margin-top: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      animation: fadeInUp 0.6s ease-out;
     }
-
     h2 {
-      color: #1e3c72;
+      color: #004e92;
       margin-bottom: 20px;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 5px;
     }
-
     ul {
-      list-style: none;
-      padding-left: 0;
+      padding-left: 20px;
     }
-
-    ul li {
-      padding: 10px 0;
-      border-bottom: 1px dashed #ddd;
-    }
-
-    .contact {
+    footer {
       text-align: center;
-      padding: 40px;
-      background: #1e3c72;
+      padding: 20px;
+      background: #000428;
       color: #fff;
-      animation: fadeIn 1.5s ease;
+      margin-top: 40px;
     }
-
-    .contact a {
-      color: #fff;
-      text-decoration: underline;
-    }
-
-    @keyframes fadeInDown {
-      from {
-        transform: translateY(-30px);
-        opacity: 0;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-
-    @keyframes fadeInUp {
-      from {
-        transform: translateY(30px);
-        opacity: 0;
-      }
-      to {
-        transform: translateY(0);
-        opacity: 1;
-      }
-    }
-
     @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-      to {
-        opacity: 1;
-      }
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
-
 <body>
   <header>
-    <h1>Mohamed Gamal Shahda</h1>
-    <p>Network Engineer | IT Specialist | Cybersecurity </p>
+    <h1>Mohamed Gamal Abdelrahman Shahda</h1>
+    <p>Network Engineer | Cisco CCNA & CCNP Certified</p>
+    <p>📞 01030804640 | ✉️ mohammed403609@fci.bu.edu.eg</p>
+    <p>🌍 Egypt | <a href="https://linkedin.com/in/mohamed-gamal-shahda" target="_blank" style="color: #1abc9c;">LinkedIn</a></p>
   </header>
-
-  <section>
-    <h2>About Me</h2>
-    <p>I’m a passionate graduate of the Faculty of Computers and Artificial Intelligence, Benha University. Currently undergoing intensive training at NTI for 4 months in the Core Data Network Infrastructure track. I’m a certified professional in CCNA, CCNP, Ethical Hacking, and Cloud Architecture. I aspire to work in networking or security roles where I can apply my technical expertise and continue learning.</p>
+  <nav>
+    <a href="#summary">Summary</a>
+    <a href="#education">Education</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <section id="summary">
+    <h2>Professional Summary</h2>
+    <p>Motivated and certified Network Engineer with a Bachelor’s degree in Computer Science (Network Engineering specialization) from Benha University. Holds multiple industry-recognized certifications including CCNA, CCNP, and AWS Cloud. Gained hands-on experience through IT internship at GANOPE, working in network setup, Oracle databases, and cybersecurity tasks. Passionate about building secure, scalable, and cloud-integrated IT infrastructures, and eager to contribute to dynamic tech-driven teams.</p>
   </section>
-
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>CCNA & Advanced Routing</li>
-      <li>Core Data Network Infrastructure</li>
-      <li>Network Security & Ethical Hacking</li>
-      <li>Cloud Architecture (AWS)</li>
-      <li>Technical Support & IT Help Desk</li>
-      <li>Web Development (HTML, CSS, JavaScript, PHP)</li>
-    </ul>
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>Bachelor’s Degree in Computer Science</strong> – Faculty of Computers and Artificial Intelligence, Benha University</p>
+    <p>Graduation: 2025 | Grade: Very Good</p>
+    <p><strong>Graduation Project:</strong> Blood Bank Management System – Grade: A+</p>
+    <p><strong>Specialization:</strong> Network Engineering</p>
   </section>
-
-  <section>
+  <section id="certifications">
     <h2>Certifications</h2>
     <ul>
-      <li>CCNA – NTI & Cisco</li>
-      <li>CCNP Core Network – Cisco</li>
-      <li>Cloud Architecture – Amazon</li>
-      <li>Ethical Hacking – Cisco & MaharaTech</li>
-      <li>Social Media Marketing – ITI</li>
+      <li>CCNP Core Networking – Cisco (Sep 2024)</li>
+      <li>CCNP Advanced Routing – Cisco (Nov 2024)</li>
+      <li>CCNA – Cisco (Aug 2024)</li>
+      <li>Cloud Computing – AWS Academy (May 2025)</li>
+      <li>Certified Ethical Hacker (CEH) – Maharat Tech (Mar 2025)</li>
+      <li>Social Media Marketing – ITI (Sep 2024)</li>
+      <li>NTI Training – National Telecommunication Institute (Jul 2024)</li>
     </ul>
   </section>
-
-  <section>
-    <h2>Experience & Training</h2>
+  <section id="skills">
+    <h2>Technical Skills</h2>
     <ul>
-      <li>Current trainee at NTI – Core Data Network Infrastructure (4-month program)</li>
-      <li>Internship at GANOP Petroleum – IT Department</li>
+      <li>Networking: TCP/IP, OSPF, BGP, VLANs, WAN, EIGRP, Subnetting</li>
+      <li>Security: VPNs, Firewalls, Penetration Testing, Ethical Hacking</li>
+      <li>Cloud: AWS EC2, S3, Lambda, Infrastructure Management</li>
+      <li>Programming: HTML, CSS, JavaScript, PHP, Python, Java (OOP)</li>
+      <li>Software Engineering: OOP, Data Structures, Software Testing</li>
+      <li>Tools: Wireshark, Cisco Packet Tracer, GNS3, XAMPP, phpMyAdmin</li>
+      <li>Visualization: Matplotlib, Seaborn</li>
+      <li>Databases: Oracle DB, MySQL</li>
+      <li>Other: Microsoft Office, ERP Systems, Project Management</li>
     </ul>
   </section>
-
-  <section>
+  <section id="projects">
     <h2>Projects</h2>
+    <p><strong>Blood Bank Management System</strong></p>
+    <p>Web-based platform connecting hospitals to nearby blood donors by blood type and location. Includes real-time matching, hospital dashboards, secure login, and notification systems.</p>
+    <p><strong>Technologies Used:</strong> HTML, CSS, JavaScript, PHP, MySQL, XAMPP</p>
+  </section>
+  <section id="experience">
+    <h2>Experience</h2>
+    <p><strong>IT Intern</strong> – South Valley Egyptian Petroleum Holding Company (GANOPE)</p>
+    <p>June 2023 – August 2023</p>
     <ul>
-      <li><strong>Graduation Project:</strong> Blood Bank Management System – A full-stack web platform connecting donors and hospitals using HTML, CSS, JavaScript, PHP, and MySQL (XAMPP)</li>
+      <li>Assisted in network configuration and monitoring.</li>
+      <li>Participated in Oracle DB operations and IT troubleshooting.</li>
+      <li>Supported IT infrastructure and security practices.</li>
     </ul>
   </section>
-
   <section>
-    <h2>Contact</h2>
+    <h2>Languages</h2>
     <ul>
-      <li>Email: <a href="mailto:mohammed403609@fci.bu.edu.eg">mohammed403609@fci.bu.edu.eg</a></li>
-      <li>Phone: 01030804640</li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/mohamed-gamal-shahda" target="_blank">linkedin.com/in/mohamed-gamal-shahda</a></li>
+      <li>Arabic: Native</li>
+      <li>English: B2 – Upper Intermediate (Technical Communication)</li>
+      <li>German: Intermediate</li>
     </ul>
   </section>
-
-  <div class="contact">
-    <p>© 2025 Mohamed Gamal Shahda — All Rights Reserved.</p>
-  </div>
+  <section>
+    <h2>Soft Skills</h2>
+    <ul>
+      <li>Teamwork & Collaboration</li>
+      <li>Problem Solving</li>
+      <li>Self-Learning & Adaptability</li>
+    </ul>
+  </section>
+  <section>
+    <h2>Volunteer Activities</h2>
+    <p><strong>Member of Benha Go Green Family</strong></p>
+    <ul>
+      <li>Participated in university-level sustainability campaigns.</li>
+      <li>Contributed to organizing environmental workshops and awareness events.</li>
+    </ul>
+  </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:mohammed403609@fci.bu.edu.eg">mohammed403609@fci.bu.edu.eg</a></p>
+    <p>Phone: 01030804640</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/mohamed-gamal-shahda" target="_blank">linkedin.com/in/mohamed-gamal-shahda</a></p>
+    <p>Location: Egypt</p>
+  </section>
+  <footer>
+    &copy; 2025 Mohamed Gamal Shahda. All rights reserved.
+  </footer>
 </body>
-
 </html>
